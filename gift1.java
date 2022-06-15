@@ -8,8 +8,8 @@ import java.util.*;
 import java.io.*;
 public class gift1 {
     public static void main(String[] args) throws IOException{
-        Scanner sc = new Scanner(new File("gift1.in.txt"));
-        PrintWriter pw = new PrintWriter(new File("gift1.out.txt"));
+        Scanner sc = new Scanner(new File("gift1.in"));
+        PrintWriter pw = new PrintWriter(new File("gift1.out"));
         
         int numOfPpl = sc.nextInt();
         String[] people = new String[numOfPpl];
@@ -17,11 +17,7 @@ public class gift1 {
         for (int i = 0; i < numOfPpl; i++) {
             people[i] = sc.next();
         }
-        
-        // System.out.println("People array: " + Arrays.toString(people) + "; Money array: " + Arrays.toString(money));
-        
-        // System.out.println("Giver: " + giver + "; moneyGiven: " + moneyGiven + "; numOfRecievers: " + numOfRecievers);
-        
+     
         while (sc.hasNext()) {
             int position = 0;
             String giver = sc.next();
